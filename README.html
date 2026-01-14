@@ -1,0 +1,787 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>README</title><style>html{font-size:16.000000px;}</style><style>/* copy from https://github.com/sindresorhus/github-markdown-css/ */
+
+html,body{background-color: #181818;}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #d8d8d8;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body figure{margin:0;padding:0; display:table;}
+.markdown-body figure figcaption{font-size:92%; text-align:center; color:#a16946;}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -1.25rem;
+  padding-right: 0.25rem;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #7cafc2;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+.markdown-body strong{
+  color: #86c1b9;
+}
+.markdown-body em{
+  color: #86c1b9;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 0.9rem;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #dc9656;
+  text-decoration: none;
+}
+.markdown-body mjx-container[jax="SVG"] > svg a{fill:#dc9656;stroke: #dc9656;}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 0.1875rem 0.3125rem;
+  font: 0.75rem SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 0.75rem;
+  color: #a16946;
+  vertical-align: middle;
+  background-color: #1e1e1e;
+  border: 1px solid #343434;
+  border-radius: 0.1875rem;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 0.75rem;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.markdown-body hr {
+  height: .25rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  background-color: #343434;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1rem;
+  color: #a7a7a7;
+  border-left: .25rem solid #ab4642;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #2e2e2e;
+  color: #7cafc2;
+}
+
+.markdown-body h2 {
+  font-size: 1.5rem;
+  color: #7cafc2;
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+  color: #7cafc2;
+}
+
+.markdown-body h4 {
+  font-size: 1rem;
+  color: #7cafc2;
+}
+
+.markdown-body h5 {
+  font-size: .875rem;
+  color: #7cafc2;
+}
+
+.markdown-body h6 {
+  font-size: .85rem;
+  color: #7cafc2;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2rem;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 1rem;
+}
+
+.markdown-body li+li {
+  margin-top: .25rem;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #5c5c5c;
+}
+
+.markdown-body table tr {
+  background-color: #181818;
+  border-top: 1px solid #5c5c5c;
+}
+
+.markdown-body table th {
+  background-color: #2e2e2e;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #1d1d1d;
+}
+
+.markdown-body img,.markdown-body video {
+  max-width: 100%;
+  box-sizing: initial;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 1.25rem;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 1.25rem;
+}
+
+.markdown-body code {
+  padding: .2rem .4rem;
+  margin: 0;
+  font-size: 85%;
+  background-color: #1e1e1e;
+  color: #a16946;
+  border-radius: 0.1875rem;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+   font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 1rem;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 1rem;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #1e1e1e;
+  border-radius: 0.1875rem;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+  color: #a16946;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 0.1875rem;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2rem .25rem -1.6rem;
+  vertical-align: middle;
+}
+
+.markdown-body .task-list-item input[type="checkbox"]{
+-webkit-appearance: none;-moz-appearance: none;appearance: none;
+width: 0.875rem; height: 0.875rem;outline: none;
+border: 1px solid #dc9656;border-radius: 2px; 
+}
+.markdown-body .task-list-item input[type="checkbox"]:checked {
+  background:no-repeat center/80% url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23dc9656%22%20d%3D%22M173.898%20439.404l-166.4-166.4c-9.997-9.997-9.997-26.206%200-36.204l36.203-36.204c9.997-9.998%2026.207-9.998%2036.204%200L192%20312.69%20432.095%2072.596c9.997-9.997%2026.207-9.997%2036.204%200l36.203%2036.204c9.997%209.997%209.997%2026.206%200%2036.204l-294.4%20294.401c-9.998%209.997-26.207%209.997-36.204-.001z%22%2F%3E%3C%2Fsvg%3E") ;
+}
+
+.markdown-body section.footnotes{
+    margin-top:3rem;
+    border-top:solid 1px #343434;
+    padding-top:0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown-body mark{color: #111;}
+}
+
+/* PrismJS 1.23.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1rem;
+    margin: .5rem 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background-color: #1e1e1e;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1rem;
+    border-radius: .3rem;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #585858;
+}
+
+.token.punctuation {
+    color: #a1b56c;
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #f7ca88;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #a1b56c;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #$$codeBlockColor$$;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #ba8baf;
+}
+
+.token.function,
+.token.class-name {
+    color: #86c1b9;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #dc9656;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8rem;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8rem;
+  width: 3rem; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #565656;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+  .line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+  }
+
+    .line-numbers-rows > span:before {
+      content: counter(linenumber);
+      color: #565656;
+      display: block;
+      padding-right: 0.8rem;
+      text-align: right;
+    }
+
+
+</style><script>(n=>{"use strict";let s,r,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net"],t="//",i=l[0],o=Date.now(),a=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+i),m=e=>e.replace(t+i,t+s),u=window.setTimeout,v=n.querySelectorAll.bind(n),b=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const s=n.createElement("script");s.src=m(t),e.defer=!0,e.src="",e.before(s),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},h=()=>{!e&&r&&s&&(console.warn(i+" is not available. Use "+s),e=!0,u(b,0),u(b,20),setInterval(b,500))},g=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})(),y=()=>{g.time=o,g.failed=!1,g.fastNode=null;for(const t of l)((e,t)=>{let s;const r=n.createElement("link"),l=e=>{s&&(clearTimeout(s),s=0,e||(r.href="data:text/css;base64,"),r.remove(),t(e))};s=u(l,a),r.addEventListener("error",()=>l(!1)),r.addEventListener("load",()=>l(!0)),r.rel="stylesheet",r.text="text/css",r.href=e+f+o,n.head.insertAdjacentElement("afterbegin",r)})("https://"+t,e=>{e||t!==i||(r=!0,g.failed=!0),e&&!s&&(s=t),e&&!g.fastNode&&(g.fastNode=t),h()});u(()=>{r&&!s&&(s=l[1],h()),localStorage.setItem(c,JSON.stringify(g))},a+100)};if(g.time&&o-g.time<36e5&&g.failed&&g.fastNode)r=!0,s=g.fastNode,h(),u(y,1e3);else if(n.head)y();else{const j=new MutationObserver(()=>{n.head&&(j.disconnect(),y())});j.observe(n,{childList:!0,subtree:!0})}})(document);</script>
+<style>.mweb-charts{background:#fff;}
+body{ box-sizing: border-box;
+    margin: 0 auto;}
+@media print{
+    pre, code, pre code {
+     overflow: visible !important;
+     white-space: pre-wrap !important;       /* css-3 */
+     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap !important;      /* Opera 4-6 */
+     white-space: -o-pre-wrap !important;    /* Opera 7 */
+     word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+    }
+    html,body{margin:0;padding:4px;}
+    .mweb-yaml{display:none;}
+}
+
+
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  z-index: 10;
+  top: .3em;
+  right: .2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: inherit;
+  font-size: .8em;
+  padding: 4px .5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.4);
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  border-radius: .5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+</style><script>window.MathJax = {     tex: { tags: 'ams', displayMath: [ ['\\[', '\\]'] ] } ,     startup: {     pageReady() {       return MathJax.startup.defaultPageReady().then(function () {          window.mweb_mathjax_ready_val = 'yes';          if(window.mweb_mathjax_ready !== undefined){ mweb_mathjax_ready(); }       });     }   }};document.addEventListener('DOMContentLoaded', function(event) {    if (typeof Prism != 'undefined') {         Prism.highlightAll();     }});window.mweb_mathjax_ready_val = '';function theMWebMathJaxRenderIsReady(key){ return window.mweb_mathjax_ready_val; }</script><script>window.MathJax = { tex: { tags: 'ams', displayMath: [ ['\\[', '\\]'] ] } }; </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script> <style>body{max-width:808px; padding:24px;}</style></head><body><div id='markdown_content' class='markdown-body'><h1><a id="bio720-graded-assignment-week-4" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>bio720 - Graded Assignment, Week 4</h1>
+<p>This repository contains the data and results of a phylogenetic analysis performed for the course &quot;Marine Biodiversity&quot;. The solutions to all seven questions is below, while a detailed report can be found at both <a href="report.md">report.md</a> and <a href="report.html">report.html</a> (though the tables in the PDF do not look that great).</p>
+<p>The websites and programs used in this project were:</p>
+<ul>
+<li><a href="https://www.gear-genomics.com/pearl">Pearl</a></li>
+<li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a></li>
+<li><a href="https://marinespecies.org">WoRMS</a></li>
+<li><a href="https://doua.prabi.fr/software/seaview/">Seaview</a></li>
+<li><a href="https://www.megasoftware.net/">MEGA</a></li>
+</ul>
+<h2><a id="results" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h2>
+<h3><a id="1-create-consensus-sequences" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Create consensus sequences</h3>
+<p>Consensus sequences were exported from <a href="https://www.gear-genomics.com/pearl/">Pearl</a> after manual editing, then saved in separate files in <a href="data/seq/consensus_edited/">data/seq/consensus_edited</a>. There is also a combined FASTA file of these sequences in <a href="data/seq/seq_consensus-m.fasta">data/seq/seq_consensus-m.fasta</a>.<br />
+The complement sequences for these are found in <a href="data/seq/seq_complement.fst">data/seq/seq_complement.fst</a>.</p>
+<h3><a id="2-blast-consensus-sequences" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. BLAST consensus sequences</h3>
+<p>The results of the BLAST search are contained in <a href="data/blast_results.csv">data/blast_results.csv</a>.</p>
+<h3><a id="3-build-and-save-nj-tree" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Build and save NJ tree</h3>
+<p>A neighbour-joining tree was created in MEGA and can be found in <a href="data/images/phylotree_filtered.pdf">data/images/phylotree_filtered.pdf</a>. There is also a <a href="data/images/phylotree_filtered_branchlengths.pdf">version with branch lengths</a> available (filtered to only show lengths over 0.15).</p>
+<h3><a id="4-count-species" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Count species</h3>
+<p>In total, 22 species were found in the dataset. Of these, two were ambiguous and could not conclusively be determined, and one was suspicous, not fitting the dataset.</p>
+<h3><a id="5-calculate-distances" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. Calculate distances</h3>
+<p>After grouping the sequences by species, a distance matrix of the mean distance between groups was created in MEGA. This can be found at <a href="data/distance_matrix.csv">data/distance_matrix.csv</a>.</p>
+<h3><a id="6-find-the-suspicous-sequence" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. Find the suspicous sequence</h3>
+<p>While almost all sequences in the dataset were identified as marine species, one fell out of that schema. <code>SR_303</code> was identified with high likelyhood to be from a human, with some possibility of it coming from the Arthropod family Scutigerellidae. This is likely due to contamination during the sample processing in the lab.</p>
+<h3><a id="7-find-the-ambiguous-species-and-find-out-what-is-going-on-there-literature" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>7. Find the ambiguous species and find out what is going on there (literature)</h3>
+<p>Three sequences in the dataset were not able to be identified clearly. For <code>PM2_06</code>, <code>PM2_07</code> and <code>PM3_03</code>, the likelyhood for them being <em>Liocarcinus holsatus</em> or <em>Polybius henslowii</em> was exactly the same percentage.</p>
+<p>A literature review revealed this to be the result of a taxonomic regrouping. <em>Liocarcinus holsatus</em> was moved into the genus <em>Polybius</em> and is now <em>Polybius holsatus</em> (Garcia-Raso et al., 2024). <em>P. holsatus</em> seems to be a rather new species, resulting from a speciation in <em>P. henslowii</em> (Plagge et al., 2016). The two species are genetically very similar, which likely led to the ambiguous identification from BLAST.<br />
+While the old name is still listed as a synonym on WoRMS (WoRMS Editorial Board, 2026), it is no longer valid. Since the regrouping of the species has happened fairly recently, the BLAST databases have likely not been updated yet, leading them to report an invalid name.</p>
+<h2><a id="literature" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Literature</h2>
+<ol>
+<li>García-Raso, E. et al. (2024) ‘A new cryptic species of Polybiidae (Crustacea: Decapoda: Portunoidea) from the East Atlantic, with considerations on the genus Polybius’, European Journal of Taxonomy, 930, pp. 277–313. Available at: <a href="https://doi.org/10.5852/ejt.2024.930.2501">https://doi.org/10.5852/ejt.2024.930.2501</a>.</li>
+<li>Plagge, C. et al. (2016) ‘Liocarcinus corrugatus (Pennant, 1777) (Crustacea: Brachyura: Portunidae): a cosmopolitan brachyuran species?’, Raffles Bulletin of Zoology. Available at: <a href="https://zoobank.org/References/73BA15E0-882D-432B-A097-C12C911609CF">https://zoobank.org/References/73BA15E0-882D-432B-A097-C12C911609CF</a>.</li>
+<li>WoRMS Editorial Board (2026) ‘World Register of Marine Species’. VLIZ. Available at: <a href="https://doi.org/10.14284/170">https://doi.org/10.14284/170</a>.</li>
+</ol>
+</div></body></html>
